@@ -1,0 +1,52 @@
+[workspace]
+members = [
+  "crates/vizui"
+]
+resolver = "2"
+
+[workspace.dependencies]
+gpui = { git = "https://github.com/zed-industries/zed" }
+
+[profile.dev]
+split-debuginfo = "unpacked"
+debug = "limited"
+
+[profile.release]
+debug = "limited"
+lto = "thin"
+codegen-units = 1
+
+[workspace.lints.clippy]
+dbg_macro = "deny"
+todo = "deny"
+
+# These are all of the rules that currently have violations in the Zed
+# codebase.
+#
+# We'll want to drive this list down by either:
+# 1. fixing violations of the rule and begin enforcing it
+# 2. deciding we want to allow the rule permanently, at which point
+#    we should codify that separately above.
+#
+# This list shouldn't be added to; it should only get shorter.
+# =============================================================================
+
+# There are a bunch of rules currently failing in the `style` group, so
+# allow all of those, for now.
+style = "allow"
+
+# Individual rules that have violations in the codebase:
+almost_complete_range = "allow"
+arc_with_non_send_sync = "allow"
+await_holding_lock = "allow"
+borrowed_box = "allow"
+derive_ord_xor_partial_ord = "allow"
+eq_op = "allow"
+let_underscore_future = "allow"
+map_entry = "allow"
+never_loop = "allow"
+non_canonical_clone_impl = "allow"
+non_canonical_partial_ord_impl = "allow"
+reversed_empty_ranges = "allow"
+single_range_in_vec_init = "allow"
+type_complexity = "allow"

@@ -1,0 +1,13 @@
+[package]
+name = "vizui"
+version = "0.0.0"
+edition = "2021"
+authors = ["Fangdun Tsai <fundon@pindash.io>"]
+description = "A UI library for GPUI"
+license = "MIT"
+
+[dependencies]
+gpui.workspace = true
+
+[lints]
+workspace = true
