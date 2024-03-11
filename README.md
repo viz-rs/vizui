@@ -21,6 +21,7 @@ A UI library for Modern Apps, powered by [GPUI].
   - [ ] Tooltip
 * [ ] Layout
 * [ ] Settings
+* [ ] Fonts
 * [ ] Theme
 * [ ] Editor
 * [ ] Canvas
