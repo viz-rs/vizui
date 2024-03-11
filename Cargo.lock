@@ -1823,6 +1823,7 @@ name = "hello"
 version = "0.1.0"
 dependencies = [
  "gpui",
+ "uuid",
  "vizui",
 ]
 
@@ -4315,6 +4316,9 @@ name = "vizui"
 version = "0.0.0"
 dependencies = [
  "gpui",
+ "refineable",
+ "serde",
+ "serde_json",
 ]
 
 [[package]]

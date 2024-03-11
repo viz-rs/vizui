@@ -7,6 +7,7 @@ publish = false
 [dependencies]
 vizui.workspace = true
 gpui.workspace = true
+uuid.workspace = true
 
 [lints]
 workspace = true
