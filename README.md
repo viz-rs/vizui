@@ -25,7 +25,7 @@ A UI library for Modern Apps, powered by [GPUI].
 * [ ] Theme
 * [ ] Editor
 * [ ] Canvas
-* [ ] Likes dioxus's [`RSX`], Leptos' component or HTML elements
+* [ ] Component DSL: likes Dioxus' [`RSX`], Leptos' component or HTML elements
 
 [GPUI]: https://gpui.irs
 [`RSX`]: https://dioxuslabs.com/learn/0.5/reference/rsx
